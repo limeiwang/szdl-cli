@@ -1,0 +1,40 @@
+{
+  "name": "szdl-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ant-design-vue": "4.x",
+    "axios": "^1.6.5",
+    "echarts": "^5.4.3",
+    "pinia": "^2.1.7",
+    "vue": "^3.3.11",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.168",
+    "@unocss/preset-icons": "^0.58.3",
+    "@unocss/preset-rem-to-px": "^0.58.3",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.20.1",
+    "postcss-px-to-viewport-8-plugin": "^1.2.3",
+    "unocss": "^0.58.3",
+    "unplugin-auto-import": "^0.17.3",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.0.8",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-html": "^3.2.1",
+    "vite-plugin-mock-dev-server": "^1.4.5"
+  },
+  "description": "Visual large screen starter template based on Vite + Vue3 + Vue-Router4 + Pinia + Unocss + Ant-design-vue + Auto imports.",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "Limeiwang <17803122788@163.com>",
+  "license": "ISC"
+}
