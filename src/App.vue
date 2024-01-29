@@ -3,7 +3,7 @@ import { getApiTest } from './api/index'
 import { useHomeStore } from '@/store/modules/home'
 import { storeToRefs } from 'pinia'
 import EchartsChart from '@/components/EchartsChart.vue'
-import SvgIcon from "@/components/SvgIcon.vue";
+import SvgIcon from '@/components/SvgIcon.vue'
 
 const store = useHomeStore()
 const chart = ref({
@@ -48,10 +48,11 @@ onMounted(() => {
   </span>
 
   <div class="h-100 w-100">
-    <EchartsChart :options="chart"/>
+    <echarts-chart :options="chart"/>
   </div>
 
-  <SvgIcon name="vue"/>
+  <svg-icon name="vue"/>
+
   <!-- <router-view></router-view> -->
 </template>
 
