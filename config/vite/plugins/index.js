@@ -1,3 +1,4 @@
+import path from 'path'
 import vue from '@vitejs/plugin-vue'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import UnoCSS from 'unocss/vite'
@@ -7,6 +8,8 @@ import { presetUno } from 'unocss'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+
 import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
 
 import { APP_TITLE } from '../../constant'
@@ -51,6 +54,10 @@ export const createVitePlugins = () => {
           importStyle: false, // css in js
         }),
       ],
+    }),
+    createSvgIconsPlugin({
+      iconDirs: [path.resolve(process.cwd(), 'src/assets/icon')],
+      symbolId: 'icon-[dir]-[name]',
     }),
     mockDevServerPlugin(),
     // configCompressPlugin(),

@@ -31,7 +31,8 @@
     "vite": "^5.0.8",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-html": "^3.2.1",
-    "vite-plugin-mock-dev-server": "^1.4.5"
+    "vite-plugin-mock-dev-server": "^1.4.5",
+    "vite-plugin-svg-icons": "^2.0.1"
   },
   "description": "Visual large screen starter template based on Vite + Vue3 + Vue-Router4 + Pinia + Unocss + Ant-design-vue + Auto imports.",
   "main": "vite.config.js",
