@@ -49,45 +49,24 @@ axiosInstance.interceptors.response.use(
 )
 
 const requestObj = {
-  get: (
-    url,
-    options
-  ) => {
+  get: (url, options) => {
     return axiosInstance.get(url, options)
   },
-  delete: (
-    url,
-    options
-  ) => {
+  delete: (url, options) => {
     return axiosInstance.delete(url, options)
   },
-  post: (
-    url,
-    data,
-    options
-  ) => {
+  post: (url, data, options) => {
     return axiosInstance.post(url, data, options)
   },
-  put: (
-    url,
-    data,
-    options
-  ) => {
+  put: (url, data, options) => {
     return axiosInstance.put(url, data, options)
   },
-  patch: (
-    url,
-    data,
-    options
-  ) => {
+  patch: (url, data,  options) => {
     return axiosInstance.patch(url, data, options)
   }
 }
 
-const request = (
-  url,
-  options
-) => {
+const request = (url, options) => {
   const method = options?.method ?? 'GET'
 
   if (method === 'GET') {
