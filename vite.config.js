@@ -30,7 +30,7 @@ export default defineConfig(() => {
       strictPort: true, // 如果端口已占用直接退出
       proxy: {
         '^/api': {
-          target: 'https://city189.cn:1252/',
+          target: 'https://111.21.2:9090/',
           changeOrigin: true,
         },
       },
