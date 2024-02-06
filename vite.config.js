@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 import { VITE_DROP_CONSOLE, VITE_PORT } from './config/constant'
 import { createVitePlugins } from './config/vite/plugins'
 import { configManualChunk } from './config/vite/optimizer'
@@ -16,7 +17,10 @@ export default defineConfig(() => {
     css: {
       preprocessorOptions: {
         less: {
-          javascriptEnabled: true
+          javascriptEnabled: true,
+          modifyVars: {
+            hack: `true; @import (reference) "${resolve('src/assets/styles/variables.less')}";`,
+          },
         }
       }
     },

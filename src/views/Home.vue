@@ -9,3 +9,9 @@ onMounted(() => {
   console.log('home page');
 })
 </script>
+
+<style lang="less">
+.home-page {
+  color: @theme-color;
+}
+</style>
