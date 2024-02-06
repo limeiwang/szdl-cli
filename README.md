@@ -1,4 +1,4 @@
-## szdl-vite
+## szdl-cli
 
 Visual large screen starter template based on Vite + Vue3 + Vue-Router4 + Pinia + Unocss + Ant-design-vue + Auto imports.
 
