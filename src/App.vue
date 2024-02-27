@@ -52,7 +52,7 @@ onMounted(() => {
   <div class="i-mdi-light:home" />
   <div class="i-carbon-sun dark:i-carbon-moon" />
   <div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
-  <svg-icon icon-name="home" icon-class="home" class="h-8 w-8" />
+  <svg-icon icon-class="vue" class="h-8 w-8" />
   <router-view></router-view>
 </template>
 
