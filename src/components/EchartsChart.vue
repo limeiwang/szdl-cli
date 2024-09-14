@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import * as echarts from 'echarts'
+import * as echarts from 'echarts';
 
 const props = defineProps({
   options: {
@@ -14,41 +14,41 @@ const props = defineProps({
     type: String,
     default: '',
   },
-})
-const chartRef = ref(null)
+});
+const chartRef = ref(null);
 const state = reactive({
   chartInstance: null,
-})
+});
 
 const renderChart = () => {
-  state.chartInstance = markRaw(echarts.init(chartRef.value, props.theme))
-  state.chartInstance.setOption(props.options)
-}
+  state.chartInstance = markRaw(echarts.init(chartRef.value, props.theme));
+  state.chartInstance.setOption(props.options);
+};
 
 const handleResize = () => {
-  state.chartInstance?.resize()
-}
+  state.chartInstance?.resize();
+};
 
 onMounted(() => {
-  nextTick(() => renderChart())
-  window.addEventListener('resize', handleResize)
-})
+  nextTick(() => renderChart());
+  window.addEventListener('resize', handleResize);
+});
 
 onBeforeUnmount(() => {
   if (state.chartInstance) {
-    state.chartInstance.dispose()
-    state.chartInstance = null
-    window.removeEventListener('resize', handleResize)
+    state.chartInstance.dispose();
+    state.chartInstance = null;
+    window.removeEventListener('resize', handleResize);
   }
-})
+});
 
 watch(
   () => props.options,
   () => {
-    renderChart()
+    renderChart();
   },
   { deep: true },
-)
+);
 </script>
 
 <style scoped>

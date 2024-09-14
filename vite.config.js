@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import { resolve } from 'path'
-import { VITE_DROP_CONSOLE, VITE_PORT } from './config/constant'
-import { createVitePlugins } from './config/vite/plugins'
-import { configManualChunk } from './config/vite/optimizer'
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import { VITE_DROP_CONSOLE, VITE_PORT } from './config/constant';
+import { createVitePlugins } from './config/vite/plugins';
+import { configManualChunk } from './config/vite/optimizer';
 
 // https://vitejs.dev/config/
 export default defineConfig(() => {
@@ -56,5 +56,5 @@ export default defineConfig(() => {
       brotliSize: false,
       chunkSizeWarningLimit: 2000,
     },
-  }
-})
+  };
+});

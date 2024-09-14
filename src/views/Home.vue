@@ -7,7 +7,7 @@
 <script setup>
 onMounted(() => {
   console.log('home page');
-})
+});
 </script>
 
 <style lang="less">

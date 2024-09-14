@@ -26,12 +26,12 @@ const lightCurrentTime = ref({
   left: 0,
   forward: 0,
   right: 0,
-})
+});
 const lightCurrentColor = ref({
-  left: "grey",
-  forward: "grey",
-  right: "grey",
-})
+  left: 'grey',
+  forward: 'grey',
+  right: 'grey',
+});
 
 defineExpose({
   lightCurrentTime,

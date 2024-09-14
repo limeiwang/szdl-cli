@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   'env': {
     'browser': true,
     'es2021': true
@@ -30,7 +30,7 @@ export default {
   ],
   'rules': {
     'eqeqeq': 'warn', // 要求使用 === 和 !==
-    'semi': 'off', // 要求或禁止使用分号代替 ASI
+    'semi': ['error', 'always'], // 要求或禁止使用分号代替 ASI
     'indent': ['error', 2], // 强制使用一致的缩进
     'quotes': ['error', 'single'], // 强制使用一致的反勾号、双引号或单引号
     'arrow-spacing': 'error', // 强制箭头函数的箭头前后使用一致的空格
@@ -44,4 +44,4 @@ export default {
     'space-before-function-paren': 'off',
     'vue/multi-word-component-names': 'off',
   }
-}
+};

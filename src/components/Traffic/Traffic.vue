@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import TrafficLamp from "./TrafficLamp.vue";
+import TrafficLamp from './TrafficLamp.vue';
 
 const eastLight = ref(null);
 const westLight = ref(null);
@@ -25,13 +25,13 @@ nextTick(() => {
     left: 10,
     forward: 20,
     right: 30,
-  }
+  };
   eastLight.value.lightCurrentColor = {
-    left: "yellow",
-    forward: "yellow",
-    right: "yellow",
-  }
-})
+    left: 'yellow',
+    forward: 'yellow',
+    right: 'yellow',
+  };
+});
 </script>
 
 <style scoped lang="less">

@@ -1,18 +1,18 @@
-import path from 'path'
-import vue from '@vitejs/plugin-vue'
-import { createHtmlPlugin } from 'vite-plugin-html'
-import UnoCSS from 'unocss/vite'
-import UnocssIcons from '@unocss/preset-icons'
-import presetRemToPx from '@unocss/preset-rem-to-px'
-import { presetUno } from 'unocss'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
+import path from 'path';
+import vue from '@vitejs/plugin-vue';
+import { createHtmlPlugin } from 'vite-plugin-html';
+import UnoCSS from 'unocss/vite';
+import UnocssIcons from '@unocss/preset-icons';
+import presetRemToPx from '@unocss/preset-rem-to-px';
+import { presetUno } from 'unocss';
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 
-import mockDevServerPlugin from 'vite-plugin-mock-dev-server'
+import mockDevServerPlugin from 'vite-plugin-mock-dev-server';
 
-import { APP_TITLE } from '../../constant'
+import { APP_TITLE } from '../../constant';
 
 export const createVitePlugins = () => {
   const vitePlugins = [
@@ -40,10 +40,10 @@ export const createVitePlugins = () => {
       ],
     }),
     AutoImport({
-      imports: ['vue', 'vue-router'],
+      imports: ['vue', 'vue-router', 'pinia'],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       eslintrc: {
-        enabled: false,
+        enabled: true,
         filepath: './.eslintrc-auto-import.json',
         globalsPropValue: true,
       }
@@ -63,5 +63,5 @@ export const createVitePlugins = () => {
     // configCompressPlugin(),
   ];
 
-  return vitePlugins
-}
+  return vitePlugins;
+};

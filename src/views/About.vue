@@ -55,7 +55,7 @@ const dataSource = [
     age: 42,
     address: '西湖区湖底公园1号',
   },
-]
+];
 
 const columns = [
   {
@@ -73,7 +73,7 @@ const columns = [
     dataIndex: 'address',
     key: 'address',
   },
-]
+];
 
 const formState = reactive({
   username: '',
@@ -92,5 +92,5 @@ const onFinishFailed = (errorInfo) => {
 onUnmounted(() => {
   console.log('组件卸载');
   console.log(11);
-})
+});
 </script>

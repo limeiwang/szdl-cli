@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
-export const routerHistory = createWebHistory()
+export const routerHistory = createWebHistory();
 
 const routers = createRouter({
   history: routerHistory,
@@ -20,6 +20,6 @@ const routers = createRouter({
       component: () => import('@/views/About.vue')
     }
   ]
-})
+});
 
-export { routers }
+export { routers };

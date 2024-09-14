@@ -18,6 +18,6 @@ const codeMessage = {
   503: '服务不可用，服务器暂时过载或维护',
   504: '网关超时',
   505: 'HTTP版本不受支持'
-}
+};
 
-export default codeMessage
+export default codeMessage;

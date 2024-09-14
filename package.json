@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open",
+    "lint": "eslint --ext .js,.vue src",
+    "lint:fix": "eslint --ext .js,.vue src --fix",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -14,6 +16,7 @@
     "axios": "^1.6.5",
     "dayjs": "^1.11.10",
     "echarts": "^5.4.3",
+    "normalize.css": "^8.0.1",
     "pinia": "^2.1.7",
     "vue": "^3.3.11",
     "vue-router": "4"
